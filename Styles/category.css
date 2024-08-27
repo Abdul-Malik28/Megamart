@@ -1,0 +1,288 @@
+/* category start */
+
+.category-outer {
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 112px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: white;
+    animation: scroll-animation ease;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.btn {
+    color: rgba(34, 34, 34, 1);
+    background-color: rgba(243, 249, 251, 1);
+    margin: 0;
+    padding: 9px 13px;
+    border: none;
+    border-radius: 18px;
+    font-size: 13px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all .4s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.btn:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 142, 204, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.btn1 {
+    margin-left: 50px;
+}
+
+.btn1:hover .details {
+    left: 0;
+}
+
+.btn8 {
+    margin-right: 50px;
+}
+
+.btn:hover i {
+    color: rgb(247, 247, 247);
+}
+
+.btn:active {
+    opacity: 0.6;
+}
+
+.btn .details {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .1s ease;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.btn:hover .details {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.btn i {
+    color: rgba(0, 142, 204, 1);
+    display: flex;
+    margin-left: 8px;
+    transition: all .4s ease;
+}
+
+.menubar {
+    visibility: hidden;
+    font-size: 18px;
+}
+
+
+@media (max-width:1200px) {
+
+    .btn,
+    .btn .details,
+    .category,
+    .btn1,
+    .btn8 {
+        transition: all .2s ease;
+    }
+
+    .btn {
+        padding: 8px 11px;
+        font-size: 12px;
+    }
+
+    .btn .details {
+        height: 250px;
+        width: 250px;
+    }
+
+    .category {
+        justify-content: space-between;
+    }
+
+    .btn1,
+    .btn8 {
+        margin: 0;
+    }
+
+}
+
+
+@media (max-width:992px) {
+
+    .btn,
+    .btn .details {
+        transition: all .2s ease;
+    }
+
+    .btn {
+        padding: 8px 5px;
+        font-size: 9px;
+    }
+
+    .btn .details {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media (max-width:768px) {
+
+    .category,
+    .category-outer,
+    .category-outer.active,
+    .btn .details,
+    .btn i,
+    .btn,
+    .btn1,
+    .btn8,
+    .menubar {
+        transition: all .4s ease;
+    }
+
+
+
+
+    .category {
+        flex-direction: column;
+        align-items: end;
+        /* overflow: hidden; */
+    }
+
+    /* .category.active {
+        overflow: visible;
+    } */
+
+
+    .category-outer {
+        margin-top: -43px;
+        align-items: start;
+        justify-content: center;
+        border: none;
+        height: 100%;
+        z-index: 4;
+        background-color: rgb(247, 247, 247);
+        display: none;
+    }
+
+    .category-outer.active {
+        display: flex;
+    }
+
+    .btn .details {
+        height: 300px;
+        width: 300px;
+        z-index: 2;
+        top: 45px;
+        left: 0;
+    }
+
+    .btn i {
+        display: none;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 13px;
+        border-radius: 0px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .btn1 {
+        margin: 10px 0 0 0;
+    }
+
+    .btn8 {
+        margin: 0 0 10px 0;
+    }
+
+    .menubar {
+        visibility: visible;
+        font-size: 15px;
+    }
+
+}
+
+
+@media (max-width:576px) {
+
+    .btn .details,
+    .btn,
+    .btn1,
+    .btn8,
+    .menubar,
+    .category-outer,
+    .category-outer.active{
+        transition: all .2s ease;
+    }
+
+
+    .btn .details {
+        height: 250px;
+        width: 250px;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 11px;
+        border-radius: 0px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .btn1 {
+        margin: 5px 0 0 0;
+    }
+
+    .btn8 {
+        margin: 0 0 5px 0;
+    }
+
+    .menubar {
+        font-size: 12px;
+    }
+
+    .category-outer {
+        display: none;
+    }
+
+    .category-outer.active {
+        display: flex;
+    }
+
+    /* .category {
+        overflow: hidden;
+    }
+
+    .category.active {
+        overflow: visible;
+    } */
+
+}
+
+/* category end */

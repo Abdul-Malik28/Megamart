@@ -1,0 +1,491 @@
+/* footer start */
+
+footer {
+    margin-top: 120px;
+    padding: 0px 80px;
+    height: 560px;
+    width: 100%;
+    background-color: rgba(0, 142, 204, 1);
+    color: white;
+    position: relative;
+    overflow: hidden;
+    animation: scroll-animation ease;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: 85%;
+}
+
+.footer-left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    height: 85%;
+    width: 33%;
+    margin-right: 70px;
+    position: absolute;
+    left: 0;
+    top: 8%;
+}
+
+.title {
+    color: white;
+    font-size: 42px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    margin-top: -80px;
+}
+
+.contact {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.whtsp-outer {
+    display: flex;
+    margin-top: 14px;
+}
+
+.whtsp-icon {
+    font-size: 24px;
+    font-weight: lighter;
+    margin-right: 12px;
+}
+
+.cntct {
+    font-weight: 100;
+    font-size: 13px;
+}
+
+.num {
+    font-weight: 300;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: .4s all ease;
+}
+
+.num:hover {
+    transform: scale(1.1);
+}
+
+.telephone {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.destination-outer {
+    width: 100%;
+    margin-top: -80px;
+}
+
+.destination {
+    margin-top: 14px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.destination img {
+    cursor: pointer;
+    transition: .4s all ease;
+}
+
+.destination img:hover {
+    transform: scale(1.1);
+}
+
+.footer-middle-section-outer {
+    height: 85%;
+    width: 24%;
+    margin-right: 50px;
+    position: absolute;
+    left: 40%;
+    top: 8%;
+}
+
+.footer-middle-section {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+
+.title-2 {
+    font-weight: 400;
+    font-size: 20px;
+    /* margin-top: 55px; */
+}
+
+.under-line {
+    background-color: white;
+    height: 3px;
+    width: 245px;
+    border-radius: 1.5px;
+    position: absolute;
+    top: 12%;
+    left: 0;
+}
+
+.footer-middle-section ul li,
+.footer-right-section ul li {
+    margin-left: 17px;
+}
+
+.footer-middle-section ul li a,
+.footer-right-section ul li a {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 40px;
+    cursor: pointer;
+    color: white;
+    position: relative;
+}
+
+.footer-middle-section ul li a::before,
+.footer-right-section ul li a::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    width: 0;
+    transition: all .4s ease;
+}
+
+.footer-middle-section a:hover::before,
+.footer-right-section a:hover::before {
+    visibility: visible;
+    width: 100%;
+}
+
+/*
+ .footer-middle-section a:not(:hover)::before,
+.footer-right-section a:not(:hover)::before {
+    width: -1%;
+} 
+
+
+.footer-middle-section ul li a::after,
+.footer-right-section ul li a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: -6px;
+    right: 0;
+    background-color: white;
+    visibility: hidden;
+    width: 0;
+    transition: all .4s ease;
+}
+
+.footer-middle-section a:hover::after,
+.footer-right-section a:hover::after {
+    visibility: visible;
+    width: 100%;
+} */
+
+.footer-right-section-outer {
+    height: 85%;
+    width: 19%;
+    position: absolute;
+    right: 10%;
+    top: 8%;
+}
+
+.footer-right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    right: 0;
+}
+
+.title-3 {
+    margin-top: 7%;
+}
+
+.footer-right-section ul {
+    margin-top: 30px;
+}
+
+.under-line2 {
+    width: 190px;
+}
+
+.rnd {
+    border-radius: 50%;
+    position: absolute;
+}
+
+.rnd1 {
+    top: -120px;
+    right: -185px;
+    height: 467px;
+    width: 467px;
+    background-color: rgba(0, 142, 204, 1);
+    border: 1px solid rgba(12, 155, 218, 1);
+}
+
+.rnd2 {
+    top: -105px;
+    right: -170px;
+    height: 434px;
+    width: 434px;
+    background-color: rgba(12, 155, 218, 1);
+}
+
+.bottom {
+    width: 100%;
+    height: 15%;
+    border-top: 1px solid rgba(5, 171, 243, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.bottom span {
+    margin-left: 8px;
+}
+
+
+@media (max-width:1200px) {
+
+    .destination img {
+        object-fit: contain;
+        height: 50px;
+        width: 120px;
+        transition: .4s all ease;
+    }
+
+    .destination :last-child {
+        width: 140px;
+        transition: .4s all ease;
+    }
+
+    .footer-middle-section-outer {
+        width: 20%;
+        transition: .4s all ease;
+    }
+
+    .footer-right-section-outer {
+        width: 18%;
+        right: 15%;
+        transition: .4s all ease;
+    }
+
+    .under-line {
+        width: 130px;
+        top: 18%;
+        transition: .4s all ease;
+    }
+
+    .under-line2 {
+        width: 100px;
+        transition: .4s all ease;
+    }
+
+    .footer-middle-section ul li a {
+        line-height: 35px;
+        transition: .4s all ease;
+    }
+
+    .footer-right-section ul li a {
+        line-height: 30px;
+        transition: .4s all ease;
+    }
+}
+
+@media (max-width:992px) {
+    footer {
+        height: 850px;
+        transition: .4s all ease;
+    }
+
+    .bottom {
+        height: 7%;
+        transition: .4s all ease;
+    }
+
+    .footer {
+        height: 93%;
+        transition: .4s all ease;
+    }
+
+    .footer-left-section {
+        height: 50%;
+        top: 2%;
+        width: 40%;
+        transition: .4s all ease;
+    }
+
+    .footer-middle-section-outer {
+        height: 50%;
+        top: 2%;
+        width: 50%;
+        left: 45%;
+        transition: .4s all ease;
+    }
+
+    .under-line {
+        width: 250px;
+        transition: .4s all ease;
+    }
+
+    .footer-right-section-outer {
+        height: 45.3%;
+        top: 55%;
+        left: 0;
+        width: 50%;
+        transition: .4s all ease;
+    }
+
+    .under-line2 {
+        width: 190px;
+        top: 15%;
+        transition: .4s all ease;
+    }
+}
+
+@media (max-width:768px) {
+    footer {
+        height: 1250px;
+        transition: .4s all ease;
+    }
+
+    .bottom {
+        height: 4%;
+        transition: .4s all ease;
+    }
+
+    .footer {
+        height: 96%;
+        transition: .4s all ease;
+    }
+
+    .footer-left-section {
+        height: 35%;
+        top: 2%;
+        width: 100%;
+        transition: .4s all ease;
+    }
+
+    .destination {
+        justify-content: start;
+        transition: .4s all ease;
+    }
+
+    .destination :first-child {
+        margin-right: 100px;
+        transition: .4s all ease;
+    }
+
+    .footer-middle-section-outer {
+        height: 35%;
+        top: 38%;
+        width: 100%;
+        left: 0%;
+        transition: .4s all ease;
+    }
+
+    .under-line {
+        width: 250px;
+        transition: .4s all ease;
+    }
+
+    .footer-right-section-outer {
+        height: 25%;
+        top: 70%;
+        left: 0;
+        width: 100%;
+        transition: .4s all ease;
+    }
+
+    .absolute {
+        position: absolute;
+        top: 10%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: .4s all ease;
+    }
+
+    .relative {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: .4s all ease;
+    }
+
+    .title-3 {
+        margin: 0;
+        transition: .4s all ease;
+    }
+
+
+    .under-line2 {
+        width: 190px;
+        top: 13%;
+        transition: .4s all ease;
+    }
+}
+
+@media (max-width:576px) {
+    .bottom {
+        font-size: 16px;
+        transition: .4s all ease;
+    }
+
+    .bottom span {
+        margin-left: 4px;
+        transition: .4s all ease;
+    }
+
+    .destination :first-child {
+        margin-right: 30px;
+        transition: .4s all ease;
+    }
+}
+
+@media (max-width:409px) {
+    .under-line1 {
+        width: 130px;
+        top: 22%;
+        transition: .4s all ease;
+    }
+}
+
+@media (max-width:351px) {
+    .under-line2 {
+        width: 100px;
+        top: 22%;
+        transition: .4s all ease;
+    }
+}
+
+/* footer end */

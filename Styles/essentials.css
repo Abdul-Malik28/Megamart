@@ -1,0 +1,432 @@
+/* electronic start */
+
+.electronics-outer {
+    background-color: rgba(49, 49, 49, 1);
+    width: 389px;
+    height: 207px;
+    border-radius: 16px;
+    display: flex;
+    flex: 2;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .4s all ease;    
+    animation: scroll-animation ease;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.butter {
+    background-color: rgba(255, 243, 204, 1);
+}
+
+.orange {
+    background-color: rgba(255, 236, 223, 1);
+}
+
+.electronics-outer:hover {
+    transform: scale(0.9);
+    box-shadow: 2px 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-outer-3 {
+    padding: 0px 80px;
+    margin-top: 40px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    column-gap: 15px;
+    row-gap: 40px;
+    transition: .5s all ease;
+}
+
+.electronics-left-section {
+    color: white;
+    width: 60%;
+    height: 100%;
+    position: relative;
+}
+
+.electronics-text {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transition: .4s all ease;
+}
+
+.iphone {
+    font-weight: 100;
+    font-size: 14px;
+    background-color: rgba(73, 73, 73, 1);
+    padding: 8px 18px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    letter-spacing: 2px;
+    display: inline-block;
+}
+
+.realme {
+    font-weight: 300;
+    color: rgba(34, 34, 34, 1);
+    background-color: rgba(246, 222, 141, 1);
+}
+
+.redmi {
+    background-color: rgba(255, 209, 176, 1);
+}
+
+.apple-logo {
+    background-color: white;
+    border-radius: 16px;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-bottom: 18px;
+}
+
+.realme-logo {
+    background-color: rgba(255, 201, 21, 1);
+    border-radius: 0;
+    color: rgba(17, 17, 17, 1);
+    padding: 0px 10px;
+    font-weight: 500;
+}
+
+.redmi-logo {
+    background-color: rgba(255, 105, 0, 1);
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+.apple-logo i {
+    color: rgba(34, 34, 34, 1);
+    font-size: 52px;
+    font-weight: 500;
+}
+
+.redmi-logo img {
+    height: 30px;
+    width: 35px;
+    margin-top: 10px;
+}
+
+.up {
+    color: white;
+    letter-spacing: 0.5px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.black {
+    color: rgba(34, 34, 34, 1);
+}
+
+.electronics-right-section {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iphone-pic {
+    height: 250px;
+    object-fit: contain;
+    z-index: 1;
+    margin-top: 20px;
+}
+
+.realme-pic {
+    height: 170px;
+    margin-top: 8px;
+}
+
+.round {
+    border-radius: 50%;
+    position: absolute;
+}
+
+.round1 {
+    top: -95px;
+    right: -60px;
+    height: 246px;
+    width: 246px;
+    background-color: rgba(49, 49, 49, 1);
+    border: 1px solid rgba(65, 65, 65, 1);
+}
+
+.round2 {
+    top: -85px;
+    right: -50px;
+    width: 226px;
+    height: 226px;
+    background-color: rgba(64, 64, 64, 1);
+    z-index: 1;
+}
+
+.round3 {
+    background-color: rgba(255, 243, 204, 1);
+    border: 1px solid rgba(246, 222, 141, 1);
+}
+
+.round4 {
+    background-color: rgba(246, 222, 141, 1);
+}
+
+.round5 {
+    background-color: rgba(255, 236, 223, 1);
+    border: 1px solid rgba(255, 209, 176, 1);
+}
+
+.round6 {
+    background-color: rgba(255, 209, 176, 1);
+}
+
+.dots-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.rectangle-2 {
+    height: 8px;
+    width: 25px;
+    background-color: rgba(0, 142, 204, 1);
+    border-radius: 4px;
+    margin-right: 6px;
+}
+
+.dot2 {
+    height: 8px;
+    width: 8px;
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.last-dot2 {
+    margin: 0;
+}
+
+@media (max-width: 1400px) {
+    .inner-3 {
+        grid-template-columns: 1fr 1fr 1fr;
+        transition: .5s all ease;
+    }
+}
+
+@media (min-width:1400px) {
+    .inner-3 {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: auto;
+        transition: .5s all ease;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .inner-3 {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 100px;
+        row-gap: 65px;
+        transition: .5s all ease;
+    }
+
+    .dots-2 {
+        margin-top: 65px;
+    }
+}
+
+@media (max-width: 992px) {
+    .inner-3 {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 15px;
+        transition: .5s all ease;
+    }
+
+    .dots-2 {
+        margin-top: 65px;
+    }
+
+    .electronics-outer {
+        width: 380px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .inner-3 {
+        grid-template-columns: 1fr;
+        row-gap: 70px;
+        transition: .5s all ease;
+    }
+
+    .electronics-outer{
+        width: 450px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 576px) {
+    .inner-3 {
+        grid-template-columns: 1fr;
+        row-gap: 75px;
+        transition: .5s all ease;
+
+    }
+
+    .electronics-outer{
+        width: 350px;
+        height: 190px;
+    }
+
+    .line3 {
+        width: 220px;
+        transition: .5s all ease;
+    }
+}
+
+/* electronic end */
+
+
+
+/* essentials start */
+
+.product-outer-4 {
+    padding: 0px 80px;
+    margin-top: 40px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: scroll-animation ease;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.inner-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    column-gap: 35px;
+    row-gap: 40px;
+    transition: .5s all ease;
+}
+
+.essentials-product-outer {
+    height: 230px;
+    width: 170px;
+}
+
+.pic-outer-2 {
+    width: 100%;
+    height: 75%;
+    border-radius: 12%;
+    background-color: rgba(245, 245, 245, 1);
+    transition: .3s all ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.pic-outer-2:hover {
+    border: 1px solid rgba(0, 142, 204, 1);
+    box-shadow: 0px 17px 9px rgba(0, 0, 0, 0.05);
+    transform: scale(1.1);
+}
+
+.pic-outer-2 img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.text-outer {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    line-height: 22px;
+}
+
+.small-text {
+    color: rgba(102, 102, 102, 1);
+    font-size: 13.5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.big-text {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1400px) {
+    .inner-4 {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        transition: .5s all ease;
+    }
+}
+
+@media (min-width:1400px) {
+    .inner-4 {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        column-gap: auto;
+        transition: .5s all ease;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .inner-4 {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 25px;
+        transition: .5s all ease;
+    }
+}
+
+@media (max-width: 992px) {
+    .inner-4 {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 30px;
+        transition: .5s all ease;
+    }
+}
+
+@media (max-width: 768px) {
+    .inner-4 {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 30px;
+        transition: .5s all ease;
+    }
+}
+
+@media (max-width: 576px) {
+    .inner-4 {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 15px;
+        transition: .5s all ease;
+
+    }
+
+    .line4 {
+        width: 150px;
+        transition: .5s all ease;
+    }
+}
+
+/* essentials end */
